@@ -53,7 +53,7 @@ pipeline {
 							doGenerateSubmoduleConfigurations: false,
 							extensions: [[$class: 'CleanCheckout']],
 							branches: [[name: env.BRANCH_NAME]],
-							userRemoteConfigs: [[url: 'https://github.com/notvyos/vyos-build.git']]])
+							userRemoteConfigs: [[url: 'https://github.com/mark-syctnet/NOTvyos-build.git']]])
 
 						sh 'cd ..; ./build.sh'
 					}
